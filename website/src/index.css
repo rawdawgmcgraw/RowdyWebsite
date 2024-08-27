@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+  background-image: url("https://img.freepik.com/free-photo/black-mulberry-paper-textured-background_53876-129708.jpg?w=1380&t=st=1724742291~exp=1724742891~hmac=8f559a4ec11f1abf68d47c5b5a753b548797653ab28adce9e89405f3f1d752f1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

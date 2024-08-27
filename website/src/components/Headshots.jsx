@@ -8,7 +8,7 @@ import LinkWrap from "./LinkWrap";
 
 const Headshots = () => {
   return (
-    <div className='flex gap-6'>
+    <div className='flex md:gap-6'>
       <LinkWrap to={"/jefebio"}>
         <Headshot src={jefe} alt='jefe' />
       </LinkWrap>

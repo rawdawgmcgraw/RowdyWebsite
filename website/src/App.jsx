@@ -15,11 +15,11 @@ function App() {
       <Container>
         <Header />
         <NavBar />
-        <Route path='/bio'>
-          <Bio />
-        </Route>
         <Route path='/'>
           <Hero />
+        </Route>
+        <Route path='/bio'>
+          <Bio />
         </Route>
         <Route path='/jefebio'>
           <BioPerson name='Jefe' bgImage={"bg-jefeBio"} />
@@ -35,6 +35,12 @@ function App() {
         </Route>
         <Route path='/treybio'>
           <BioPerson name='Trey' bgImage={"bg-treyBio"} />
+        </Route>
+        <Route path='*'>
+          <Hero />
+        </Route>
+        <Route path='/RowdyWebsite/'>
+          <Hero />
         </Route>
         <Footer />
       </Container>

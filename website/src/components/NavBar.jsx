@@ -4,11 +4,10 @@ const NavBar = () => {
   const links = [
     { label: "Home", path: "/" },
     { label: "Bio", path: "/bio" },
-    { label: "Nick's Bio", path: "/nickbio" },
-    { label: "Geronimos's Bio", path: "/geronimobio" },
-    { label: "Billy's Bio", path: "/billybio" },
-    { label: "Trey's Bio", path: "/treybio" },
-    { label: "Jefe's Bio", path: "/jefebio" },
+    { label: "Contact", path: "/contact" },
+    { label: "Videos", path: "/videos" },
+    { label: "Merch", path: "/merch" },
+    { label: "Lil Extra Sumthin'", path: "/extra" },
   ];
 
   const renderedLinks = links.map((link) => {
@@ -25,7 +24,7 @@ const NavBar = () => {
   });
 
   return (
-    <div className='text-center'>
+    <div className='hidden md:flex items-center text-center'>
       <div>{renderedLinks}</div>
     </div>
   );

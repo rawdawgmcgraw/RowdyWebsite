@@ -24,9 +24,9 @@ const BioPerson = ({ bgImage, name }) => {
   return (
     <Container>
       <div
-        className={`flex flex-col h-full w-full ${bgImage} bg-no-repeat bg-contain bg-center items-center`}
+        className={`flex flex-col h-full w-full ${bgImage} bg-no-repeat bg-contain bg-center items-center mix-blend-screen`}
       >
-        <div className='flex flex-col h-full bg-black/50 items-center justify-center'>
+        <div className='flex flex-col h-full items-center justify-center'>
           <img className='h-[17rem] mt-20' src={source} alt={name} />
           <Back />
         </div>
