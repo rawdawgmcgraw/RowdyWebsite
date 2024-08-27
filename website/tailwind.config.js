@@ -10,6 +10,7 @@ export default {
         billyBio: "url(images/Billys_bio_pic_cropped.png)",
         geronimoBio: "url(images/Geronimos_bio_pic_cropped.png)",
         nickBio: "url(images/Nicks_bio_pic_cropped.png)",
+        treyBio: "url(images/Treys_bio_pic_cropped.png)",
       },
     },
   },

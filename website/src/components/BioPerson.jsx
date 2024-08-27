@@ -5,7 +5,7 @@ import NickText from "../images/Nicks_bio_cropped.png";
 import BillyText from "../images/Billys_bio_cropped.png";
 import GeronimoText from "../images/Geronimos_bio_cropped.png";
 import Back from "./Back";
-// import TreyText from "../images/Treys_bio_cropped.png";
+import TreyText from "../images/Treys_bio_cropped.png";
 
 /* eslint-disable react/prop-types */
 const BioPerson = ({ bgImage, name }) => {
@@ -14,7 +14,7 @@ const BioPerson = ({ bgImage, name }) => {
   const imageMap = {
     Billy: BillyText,
     Geronimo: GeronimoText,
-    // Trey: TreyText,
+    Trey: TreyText,
     Jefe: JefeText,
     Nick: NickText,
   };
