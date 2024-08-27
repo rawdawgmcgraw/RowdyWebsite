@@ -2,7 +2,7 @@ import classNames from "classnames";
 import useNavigation from "../hooks/use-navigation";
 /* eslint-disable react/prop-types */
 
-function Link({ to, children, className, activeClassName }) {
+function Link({ to, children, className, activeClassName, onClick }) {
   const { navigate, currentPath } = useNavigation();
 
   const isActive = currentPath === to;
@@ -17,6 +17,9 @@ function Link({ to, children, className, activeClassName }) {
   );
   const handleClick = (event) => {
     event.preventDefault();
+    if (onClick) {
+      onClick();
+    }
     navigate(to);
   };
 

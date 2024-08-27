@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Link from "./Link";
 
-const Navbar = () => {
+const Menu = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
@@ -19,31 +19,25 @@ const Navbar = () => {
       />
       {nav ? (
         <div className='fixed w-full h-screen bg-black/80 flex flex-col justify-center items-center z-20 text-white font-bronco text-xl'>
-          <Link
-            to='/'
-            onClick={handleNav}
-            href='#main'
-            className={navBarLinkStyle}
-          >
+          <Link to='/' onClick={handleNav} className={navBarLinkStyle}>
             <span>Home</span>
           </Link>
-          <Link
-            to='/bio'
-            onClick={handleNav}
-            href='#bio'
-            className={navBarLinkStyle}
-          >
+          <Link to='/bio' onClick={handleNav} className={navBarLinkStyle}>
             <span>Bio</span>
           </Link>
-          <a onClick={handleNav} href='#videos' className={navBarLinkStyle}>
+          <Link to='/videos' onClick={handleNav} className={navBarLinkStyle}>
             <span>Videos</span>
-          </a>
-          <a onClick={handleNav} href='#streaming' className={navBarLinkStyle}>
+          </Link>
+          <Link to='/contact' onClick={handleNav} className={navBarLinkStyle}>
             <span>Contact</span>
-          </a>
-          <a onClick={handleNav} href='#extra' className={navBarLinkStyle}>
+          </Link>
+          <Link
+            to='/lilextrasumthin'
+            onClick={handleNav}
+            className={navBarLinkStyle}
+          >
             <span>Lil Extra Sumthin</span>
-          </a>
+          </Link>
         </div>
       ) : (
         ""
@@ -52,4 +46,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Menu;
