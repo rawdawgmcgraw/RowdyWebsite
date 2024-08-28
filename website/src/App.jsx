@@ -7,6 +7,8 @@ import Container from "./components/Container";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
+import Contact from "./components/Contact";
+import Videos from "./components/Videos";
 
 function App() {
   return (
@@ -35,6 +37,12 @@ function App() {
         </Route>
         <Route path='/treybio'>
           <BioPerson name='Trey' bgImage={"bg-treyBio"} />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
+        </Route>
+        <Route path='/videos'>
+          <Videos />
         </Route>
         <Route path='*'>
           <Hero />
