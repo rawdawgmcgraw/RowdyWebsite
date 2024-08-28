@@ -8,3 +8,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@layer components {
+  .vid {
+    @apply rounded-2xl border border-violet-900;
+  }
+}
+
+@layer components {
+  .vids {
+    @apply rounded-2xl m-2 border border-violet-900;
+  }
+}
