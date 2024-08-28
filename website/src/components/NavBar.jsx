@@ -24,7 +24,7 @@ const NavBar = () => {
   });
 
   return (
-    <div className='hidden mt-4 md:flex items-center text-center bg-gray-800/40 rounded-full'>
+    <div className='hidden my-4 md:flex items-center text-center bg-gray-800/40 rounded-full'>
       <div>{renderedLinks}</div>
     </div>
   );
