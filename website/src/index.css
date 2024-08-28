@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-image: url("./images/bodyBG.jpg");
+  background-image: url('./images/bodyBG.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,12 +11,12 @@ body {
 
 @layer components {
   .vid {
-    @apply rounded-2xl border border-violet-900;
+    @apply w-full h-64 md:h-96 rounded-2xl;
   }
 }
 
 @layer components {
   .vids {
-    @apply rounded-2xl m-2 border border-violet-900;
+    @apply rounded-3xl cursor-pointer transform transition-transform duration-200 hover:scale-105 opacity-60 hover:opacity-100;
   }
 }
