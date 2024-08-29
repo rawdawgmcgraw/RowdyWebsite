@@ -9,28 +9,44 @@ const Hero = () => {
       <div className='w-full h-full bg-background bg-contain bg-no-repeat bg-center mix-blend-screen'>
         <div className='flex items-center justify-center h-full bg-black/30'>
           <div className='flex items-center justify-center gap-10 pt-40'>
-            <a href='https://www.facebook.com/profile.php?id=100089875520742&sk=about'>
+            <a
+              href='https://www.facebook.com/profile.php?id=100089875520742&sk=about'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 className='h-20 hover:scale-110 ease-in duration-200 cursor-pointer'
                 src={facebook}
                 alt='/'
               />
             </a>
-            <a href='https://www.instagram.com/letsgetrowdy_htx/'>
+            <a
+              href='https://www.instagram.com/letsgetrowdy_htx/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 className='h-20 hover:scale-110 ease-in duration-200 cursor-pointer'
                 src={instagram}
                 alt='/'
               />
             </a>
-            <a href='https://www.youtube.com/@Letsgetrowdyhtx'>
+            <a
+              href='https://www.youtube.com/@Letsgetrowdyhtx'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 className='h-20 hover:scale-110 ease-in duration-200 cursor-pointer'
                 src={youtube}
                 alt='/'
               />
             </a>
-            <a href='https://open.spotify.com/artist/4udrE3baOs3PK5k0CPr44V'>
+            <a
+              href='https://open.spotify.com/artist/4udrE3baOs3PK5k0CPr44V'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <img
                 className='h-20 hover:scale-110 ease-in duration-200 cursor-pointer'
                 src={spotify}
