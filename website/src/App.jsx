@@ -10,6 +10,7 @@ import Menu from "./components/Menu";
 import Contact from "./components/Contact";
 import Videos from "./components/Videos";
 import ImgCarousel from "./components/ImgCarousel";
+import LilExtraSumthin from "./components/LilExtraSumthin";
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
         </Route>
         <Route path='/merch'>
           <ImgCarousel />
+        </Route>
+        <Route path='/extra'>
+          <LilExtraSumthin />
         </Route>
         <Footer />
       </Container>
