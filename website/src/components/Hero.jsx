@@ -3,18 +3,21 @@ import spotify from "../images/spotify-cropped.png";
 import facebook from "../images/facebook-cropped.png";
 import instagram from "../images/instagram-cropped.png";
 import mobilePic from "../images/mobilePic.jpg";
-
+import Popup1 from "./Popup1";
 const Hero = () => {
   const imgStyle =
     "h-[10vh] hover:scale-110 ease-in duration-200 cursor-pointer";
   return (
     <div className='h-full w-full'>
-      <div className='md:hidden h-full flex items-start justify-center'>
+      <div className='md:hidden h-full flex justify-center flex-col items-center'>
         <img
-          className='scale-75 rounded-3xl shadow-md shadow-purple-800 opacity-80'
+          className='h-[50%] mb-6 rounded-3xl shadow-md shadow-purple-800 opacity-80'
           src={mobilePic}
           alt='/'
         />
+        <div className='mb-20'>
+          <Popup1 />
+        </div>
       </div>
       <div className='hidden md:flex flex-col h-full w-full items-center'>
         <div className='flex flex-col items-center justify-end pb-16 w-full h-full bg-background bg-contain bg-no-repeat bg-center mix-blend-screen'>

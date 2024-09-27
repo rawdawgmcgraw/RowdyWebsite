@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 body {
-  background-image: url('./images/bodyBG.jpg');
+  background-image: url("./images/bodyBG.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 @layer components {
@@ -21,29 +22,12 @@ body {
   }
 }
 
-<<<<<<< HEAD
-@layer components {
-  .button {
-    @apply bg-stone-500/40 my-6 rounded-2xl cursor-pointer hover:scale-105 hover:rounded-3xl duration-200;
-  }
-}
-
 @font-face {
-  font-family: "BroncoFont";
-  src: url(/BroncoPersonalUse.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "TexasFont";
-  src: url(/TexasTango.otf) format("opentype");
-=======
-@font-face {
-  font-family: 'BroncoPersonalUse';
+  font-family: "BroncoPersonalUse";
   src: url(./public/fonts/BroncoPersonalUse.ttf);
 }
 
 @font-face {
-  font-family: 'CarnivaleeFreakshow';
+  font-family: "CarnivaleeFreakshow";
   src: url(./public/fonts/CarnivaleeFreakshow-DLrm.ttf);
->>>>>>> f0a7facadda84a240b863ebf7fe5ce15ac0ddc11
 }

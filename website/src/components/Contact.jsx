@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Input from "./Input";
+import Popup1 from "./Popup1";
 
 const Contact = () => {
   const form = useRef();
@@ -37,6 +38,9 @@ const Contact = () => {
           <input className='cursor-pointer' type='submit' value='Send' />
         </div>
       </form>
+      <div className='w-full flex justify-center items-center mt-8'>
+        <Popup1 />
+      </div>
     </div>
   );
 };
