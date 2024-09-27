@@ -25,8 +25,8 @@ const Popup1 = () => {
   };
 
   const handleBioClick = () => {
-    handleBio();
-    handleNav();
+    setBioOpen(true);
+    setIsOpen(false);
   };
 
   const headShotStyling = "w-1/4 h-auto";
@@ -57,9 +57,9 @@ const Popup1 = () => {
             <Link to='/' onClick={handleNav} className={navBarLinkStyle}>
               <span>Home</span>
             </Link>
-            <Link onClick={handleBioClick} className={navBarLinkStyle}>
+            <a onClick={handleBioClick} className={navBarLinkStyle}>
               <span>The Band</span>
-            </Link>
+            </a>
             <Link to='/videos' onClick={handleNav} className={navBarLinkStyle}>
               <span>Videos</span>
             </Link>
