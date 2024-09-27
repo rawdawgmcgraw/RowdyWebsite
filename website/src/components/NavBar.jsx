@@ -6,7 +6,7 @@ const NavBar = () => {
     { label: "Bio", path: "/bio" },
     { label: "Contact", path: "/contact" },
     { label: "Videos", path: "/videos" },
-    { label: "Merch", path: "/merch" },
+
     { label: "Lil Extra Sumthin'", path: "/extra" },
   ];
 

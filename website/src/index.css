@@ -20,3 +20,19 @@ body {
     @apply cursor-pointer transform transition-transform duration-200 hover:scale-105 opacity-60 hover:opacity-100;
   }
 }
+
+@layer components {
+  .button {
+    @apply bg-stone-500/40 my-6 rounded-2xl cursor-pointer hover:scale-105 hover:rounded-3xl duration-200;
+  }
+}
+
+@font-face {
+  font-family: "BroncoFont";
+  src: url(/BroncoPersonalUse.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "TexasFont";
+  src: url(/TexasTango.otf) format("opentype");
+}

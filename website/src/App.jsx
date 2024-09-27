@@ -6,16 +6,14 @@ import BioPerson from "./components/BioPerson";
 import Container from "./components/Container";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Menu from "./components/Menu";
 import Contact from "./components/Contact";
 import Videos from "./components/Videos";
-import ImgCarousel from "./components/ImgCarousel";
 import LilExtraSumthin from "./components/LilExtraSumthin";
+import MobileBioMenu from "./components/MobileBioMenu";
 
 function App() {
   return (
     <div>
-      <Menu />
       <Container>
         <Header />
         <NavBar />
@@ -24,6 +22,7 @@ function App() {
         </Route>
         <Route path='/bio'>
           <Bio />
+          <MobileBioMenu />
         </Route>
         <Route path='/jefebio'>
           <BioPerson name='Jefe' bgImage={"bg-jefeBio"} />
@@ -52,9 +51,7 @@ function App() {
         <Route path='/RowdyWebsite/'>
           <Hero />
         </Route>
-        <Route path='/merch'>
-          <ImgCarousel />
-        </Route>
+
         <Route path='/extra'>
           <LilExtraSumthin />
         </Route>

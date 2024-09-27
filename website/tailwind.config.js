@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        bronco: ["BroncoFont", "sans-serif"], // Add your custom font here
+        texas: ["TexasFont", "calibri"],
+      },
       backgroundImage: {
         background: "url(images/bkgrndImage1.png)",
         second: "url(images/background-bio-cropped.png)",

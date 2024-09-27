@@ -1,14 +1,13 @@
 import { useState } from "react";
 
 const ExtraEmbeds = () => {
-  const video2ID = "v7FkSzTtR4";
   const video3ID = "stRYsT_e_Gg";
   const video4ID = "Z9f-nLc71nY";
   const video5ID = "bAYzAUcurik";
-  const [featuredVideoId, setFeaturedVideoId] = useState("B8N9qrY00Ww");
+  const [featuredVideoId, setFeaturedVideoId] = useState("v7FkSzTtR4s");
   const [thumbnails, setThumbnails] = useState([
     // { id: video1ID },
-    { id: video2ID },
+
     { id: video3ID },
     { id: video4ID },
     { id: video5ID },
