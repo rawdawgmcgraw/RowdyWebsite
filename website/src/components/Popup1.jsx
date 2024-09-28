@@ -23,7 +23,7 @@ const Popup1 = () => {
   ];
 
   const navBarLinkStyle =
-    "text-white font-carnivale sm:w-[60%] w-[70%] flex justify-center items-center rounded-full shadow-md bg-black/60 shadow-slate-600 hover:bg-slate-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200";
+    "text-white font-carnivale w-[60%] md:w-[70%] flex justify-center items-center rounded-full shadow-md bg-black/60 shadow-slate-600 hover:bg-slate-600 sm:m-2 sm:p-4 cursor-pointer hover:scale-110 ease-in duration-200";
 
   const handleNav = () => {
     setIsOpen(!isOpen);
@@ -34,7 +34,7 @@ const Popup1 = () => {
   };
 
   const handleBioClick = () => {
-    setBioOpen(true);
+    setBioOpen(!bioOpen);
     setIsOpen(false);
   };
 
@@ -111,10 +111,10 @@ const Popup1 = () => {
                     src={person.src}
                     alt={person.name}
                     override={true}
-                    className='w-24'
+                    className='sm:w-24 w-20'
                     onClick={handleBio}
                   />
-                  <span className='mt-8 font-carnivale text-5xl ml-6'>
+                  <span className='mt-8 font-carnivale sm:text-5xl text-4xl ml-6'>
                     {person.name}
                   </span>
                 </LinkWrap>
