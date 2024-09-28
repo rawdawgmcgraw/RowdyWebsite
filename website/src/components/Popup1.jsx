@@ -57,8 +57,7 @@ const Popup1 = () => {
             isOpen ? "translate-y-0" : "translate-y-full"
           }`}
         >
-          <div className='h-1/3'></div>
-          <div className='h-2/3 flex flex-col justify-between'>
+          <div className='h-2/3 flex flex-col justify-between mt-48'>
             <div className='text-4xl w-full h-full mb-5 flex flex-col justify-between items-center sm:space-y-6'>
               <Link to='/' onClick={handleNav} className={navBarLinkStyle}>
                 <span>Home</span>
@@ -94,40 +93,42 @@ const Popup1 = () => {
           </div>
         </div>
         {/* BIO POP UP MENU w/ HEADSHOTS */}
-        <div
-          className={`fixed inset-0 bg-black bg-opacity-90 z-20 transition-transform duration-300 ${
-            bioOpen ? "translate-y-0" : "translate-y-full"
-          }`}
-        >
-          <div className='flex flex-col items-center w-full justify-center h-5/6 p-4'>
-            <div className='flex flex-col items-start mt-16'>
-              {headshotsData.map((person, index) => (
-                <LinkWrap
-                  className='flex justify-center'
-                  key={index}
-                  to={person.link}
-                >
-                  <Headshot
-                    src={person.src}
-                    alt={person.name}
-                    override={true}
-                    className='sm:w-24 w-20'
-                    onClick={handleBio}
-                  />
-                  <span className='mt-8 font-carnivale sm:text-5xl text-4xl ml-6'>
-                    {person.name}
-                  </span>
-                </LinkWrap>
-              ))}
+        {bioOpen && (
+          <div
+            className={`fixed inset-0 bg-black bg-opacity-90 z-20 transition-transform duration-300 ${
+              bioOpen ? "translate-y-0" : "translate-y-full"
+            }`}
+          >
+            <div className='flex flex-col items-center w-full justify-center h-5/6 p-4'>
+              <div className='flex flex-col items-start mt-16'>
+                {headshotsData.map((person, index) => (
+                  <LinkWrap
+                    className='flex justify-center'
+                    key={index}
+                    to={person.link}
+                  >
+                    <Headshot
+                      src={person.src}
+                      alt={person.name}
+                      override={true}
+                      className='sm:w-24 w-20'
+                      onClick={handleBio}
+                    />
+                    <span className='mt-8 font-carnivale sm:text-5xl text-4xl ml-6'>
+                      {person.name}
+                    </span>
+                  </LinkWrap>
+                ))}
+              </div>
+            </div>
+            <div className='h-1/6 flex justify-center items-center'>
+              <AiOutlineClose
+                onClick={handleBio}
+                className='text-6xl text-white cursor-pointer'
+              />
             </div>
           </div>
-          <div className='h-1/6 flex justify-center items-center'>
-            <AiOutlineClose
-              onClick={handleBio}
-              className='text-6xl text-white cursor-pointer'
-            />
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );
