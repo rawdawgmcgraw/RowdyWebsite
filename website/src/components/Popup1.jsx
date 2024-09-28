@@ -66,11 +66,7 @@ const Popup1 = () => {
             <Link to='/contact' onClick={handleNav} className={navBarLinkStyle}>
               <span>Contact</span>
             </Link>
-            <Link
-              to='/lilextrasumthin'
-              onClick={handleNav}
-              className={navBarLinkStyle}
-            >
+            <Link to='/extra' onClick={handleNav} className={navBarLinkStyle}>
               <span>Lil Extra</span>
             </Link>
           </div>
