@@ -58,7 +58,7 @@ const Popup1 = () => {
           }`}
         >
           <div className='h-2/3 flex flex-col justify-between mt-48'>
-            <div className='text-4xl w-full h-full mb-5 flex flex-col justify-between items-center sm:space-y-6'>
+            <div className='text-4xl w-full h-full mb-16 flex flex-col justify-between items-center sm:space-y-6'>
               <Link to='/' onClick={handleNav} className={navBarLinkStyle}>
                 <span>Home</span>
               </Link>
@@ -84,7 +84,7 @@ const Popup1 = () => {
               </Link>
             </div>
             {/* CLOSE BUTTON */}
-            <div className='mb-20 w-full flex justify-center items-center'>
+            <div className='mb-10 w-full flex justify-center items-center'>
               <AiOutlineClose
                 onClick={handleNav}
                 className='text-6xl text-white'

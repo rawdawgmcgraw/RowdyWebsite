@@ -9,13 +9,13 @@ const Hero = () => {
     "h-[10vh] hover:scale-110 ease-in duration-200 cursor-pointer";
   return (
     <div className='h-full w-full'>
-      <div className='md:hidden h-full flex justify-center flex-col items-center'>
+      <div className='md:hidden h-full flex justify-center flex-col items-center '>
         <img
           className='h-[50%] mb-6 rounded-3xl shadow-md shadow-purple-800 opacity-80'
           src={mobilePic}
           alt='/'
         />
-        <div className='mb-20'>
+        <div className='pt-16'>
           <Popup1 />
         </div>
       </div>
