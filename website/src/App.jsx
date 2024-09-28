@@ -12,7 +12,11 @@ import ImgCarousel from "./components/ImgCarousel";
 import LilExtraSumthin from "./components/LilExtraSumthin";
 // import Popup1 from "./components/Popup1";
 
+import { useState } from "react";
 function App() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isBioOpen, setIsBioOpen] = useState(false);
+
   return (
     <div>
       {/* <Menu /> */}
