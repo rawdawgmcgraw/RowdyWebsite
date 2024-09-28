@@ -20,7 +20,7 @@ function App() {
       <Container>
         <Header />
         <NavBar />
-        <div className='h-[85%]'>
+        <div className='h-[75%]'>
           <Route path='/'>
             <Hero />
           </Route>

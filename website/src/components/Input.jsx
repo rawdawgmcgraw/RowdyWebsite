@@ -3,7 +3,7 @@ const Input = ({ name, isMessage }) => {
   let defaultStyling =
     "w-full px-3 py-2 mb-3 rounded-lg bg-gray-800 opacity-50 focus:outline-none";
 
-  let messageStyling = `${defaultStyling} h-60 focus:opacity-50`;
+  let messageStyling = `${defaultStyling} sm:h-60 h-32 w-[300px] focus:opacity-50`;
 
   let displayContent = (
     <div>
