@@ -1,13 +1,13 @@
-import Headshots from './Headshots'
+import Headshots from "./Headshots";
 
 const Bio = () => {
   const fontStyling =
-    'text-sm md:text-md 2xl:text-xl xl:text-l font-semibold font-serif mb-4'
+    "text-[15px] lg:text-[16px] 2xl:text-xl xl:text-[18px] font-semibold font-serif mb-4";
   return (
-    <div className="hidden md:flex flex-col h-full w-full text-gray-100 font-bold items-center justify-center">
-      <div className="flex h-full w-full bg-no-repeat bg-contain bg-center md:bg-second justify-center items-center mix-blend-screen">
-        <div className="flex flex-col h-full bg-black/65 justify-around items-center rounded-3xl">
-          <div className="pt-6 h-[70%] lg:h-[60%] w-[80%] md:w-[70%] text-center flex flex-col justify-center bg-black/30 rounded-2xl p-6">
+    <div className='hidden md:flex flex-col h-full w-full text-gray-100 font-bold items-center justify-center'>
+      <div className='flex h-full w-full bg-no-repeat bg-contain bg-center md:bg-second justify-center items-center mix-blend-screen'>
+        <div className='flex flex-col h-full bg-black/65 justify-around items-center rounded-3xl'>
+          <div className='pt-6 h-[70%] lg:h-[60%] lg:w-[90%] w-full text-center flex flex-col justify-center bg-black/30 rounded-2xl p-6'>
             <h1 className={fontStyling}>
               From the depths of the bayou city comes a multigenerational
               gathering of some of the scene's greatest individuals that came
@@ -40,7 +40,7 @@ const Bio = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;
