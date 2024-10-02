@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Route from "./components/Route";
 import BioPerson from "./components/BioPerson";
 import Container from "./components/Container";
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Videos from "./components/Videos";
@@ -19,13 +19,14 @@ function App() {
 
       <Container>
         <Header />
-        <NavBar />
+        {/* <NavBar /> */}
         <div className='h-[75%] w-[75%]'>
           <Route path='/'>
             <Hero />
           </Route>
           <Route path='/bio'>
             <Bio />
+            <Hero className='md:hidden' />
             {/* <MobileBioMenu /> */}
           </Route>
           <Route path='/jefebio'>

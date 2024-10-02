@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='h-full max-w-lg w-full mx-auto my-6 p-6 rounded-3xl bg-gradient-to-r from-black/80 to-black/30'>
+    <div className='h-[90%] max-w-lg w-full mx-auto my-6 p-6 rounded-3xl bg-gradient-to-r from-black/80 to-black/30'>
       <h1 className='text-3xl text-center text-gray-300 font-bold mb-6'>
         Contact Us
       </h1>
