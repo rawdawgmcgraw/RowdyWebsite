@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='h-full w-full'>
       <div className='md:hidden h-full flex justify-center flex-col items-center '>
         <img
-          className='h-[60%] rounded-3xl shadow-md shadow-purple-800 opacity-80'
+          className='h-[50%] rounded-3xl shadow-md shadow-purple-800 opacity-80'
           src={bckgrndImage1}
           alt='/'
         />
