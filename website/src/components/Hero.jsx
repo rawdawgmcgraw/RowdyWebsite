@@ -1,6 +1,7 @@
 import bckgrndImage1 from "../images/bkgrndImage1.png";
 import Popup1 from "./Popup1";
 import Social from "./Social";
+import SocialMobile from "./SocialMobile";
 const Hero = () => {
   return (
     <div className='h-full w-full'>
@@ -10,6 +11,7 @@ const Hero = () => {
           src={bckgrndImage1}
           alt='/'
         />
+        <SocialMobile />
         <div className='pt-16'>
           <Popup1 />
         </div>

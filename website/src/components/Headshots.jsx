@@ -18,9 +18,7 @@ const Headshots = () => {
       <LinkWrap to={"/geronimobio"}>
         <Headshot src={geronimo} alt='geronimo' />
       </LinkWrap>
-      <LinkWrap to={"/nickbio"}>
-        <Headshot src={nick} alt='nick' />
-      </LinkWrap>
+
       <LinkWrap to={"/treybio"}>
         <Headshot src={trey} alt='trey' />
       </LinkWrap>
